@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-          <tittle>
+          <title>
                 Basic HTML
 
-          </tittle>
+          </title>
           <meta  charset="utf-8">
           <link rel="stylesheet" href="style.css">
           
     </head>
     <boby>
-          <button id="btnDO">DO</button>
-          <button>DO#</button>
-          <button>RE</button>
-          <button>RE#</button>
-          <button>MI</button>
-          <button>FA</button>
-          <button>FA#</button>
-          <button>SOL</button>
-          <button>SOL#</button>
-          <button>LA</button>
-          <button>LA#</button>
-          <button>SI</button>
+          <button data-key="1" data-note="Do">DO</button>
+          <button data-key="2" data-note="Do#" class="sharp">DO#</button>
+          <button data-key="3" data-note="Re">RE</button>
+          <button data-key="4" data-note="Re#" class="sharp">RE#</button>
+          <button data-key="5" data-note="Mi">MI</button>
+          <button data-key="6" data-note="Fa">FA</button>
+          <button data-key="7" data-note="Fa#" class="sharp">FA#</button>
+          <button data-key="8" data-note="Sol">SOL</button>
+          <button data-key="9" data-note="Sol#" class="sharp">SOL#</button>
+          <button data-key="0" data-note="La">LA</button>
+          <button data-key="q" data-note="La#" class="sharp">LA#</button>
+          <button data-key="w" data-note="Si">SI</button>
           <script type="text/javascript" src="app.js">
+
+          <audio id="audioDo"scr=""></audio>
+          <audio id="audioDosharp"scr=""></audio>
+          <audio id="audioFa"scr=""></audio>
+          <audio id="audioFasharp"scr=""></audio>
+          <audio id="audioLa"scr=""></audio>
+          <audio id="audioLasharp"scr="La#"></audio>
+          <audio id="audioMi"scr=""></audio>
+          <audio id="audioRe"scr=""></audio>
+          <audio id="audioResharp"scr=""></audio>
+          <audio id="audioSi"scr=""></audio>
+          <audio id="audioSol"scr=""></audio>
+          <audio id="audioSolsharp"scr=""></audio>
+
+
+
+
+
           </script>
     </boby>
 </html>
