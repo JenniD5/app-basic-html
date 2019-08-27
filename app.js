@@ -1,9 +1,18 @@
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('button');//para que busque todos los botones 
 
-const playnote=event=>{
-    console.log(Event.target.dataset.note)
-    
+let playnote = event => {
+    console.log(event.target)
+    const button = event.target;
+    const note = button.dataset.note;
+    console.log(`audio${note}`);
+    const audio = document.getElementById(`audio${note}`);
+    audio.play();
 }
+
 buttons.forEach(
-button=>button.addEventListener('click', playnote)
+    button => button.addEventListener('click', playnote)
+   
 );
+
+
+
