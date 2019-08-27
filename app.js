@@ -7,6 +7,7 @@ let playnote = event => {
     console.log(`audio${note}`);
     const audio = document.getElementById(`audio${note}`);
     audio.play();
+    audio.pause();
 }
 
 buttons.forEach(
