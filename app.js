@@ -19,5 +19,16 @@ buttons.forEach(
    
 );
 
+const keyNoteDown = event =>
+{
+    console.log(event);//para que imprima el evento 
+    const key= event.key;
+    const button=document.querySelector(`button[data-key="${key}"]`)//los queryselector buscn etiquetas, en este cao que se equivalente al key 
+    //con [] puedes buscar todo lo que tenga adentro 
+     if(button) button.click(); //para cuando presiones un boton que no es o que no tiene funcion
+}
+document.addEventListener(`keydown`, keyNoteDown );//kateDown nombre del evento para buscar una tecla 
+
+
 
 
