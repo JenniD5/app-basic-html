@@ -1,13 +1,17 @@
 const buttons = document.querySelectorAll('button');//para que busque todos los botones 
 
-let playnote = event => {
-    console.log(event.target)
+
+const playnote = event =>{
     const button = event.target;
     const note = button.dataset.note;
-    console.log(`audio${note}`);
-    const audio = document.getElementById(`audio${note}`);
-    audio.play();
+    const audioId = `audio${note}`;
+    //console.log(audioId);
+    const audio = document.getElementById(audioId);
+    console.log(audio);
     audio.pause();
+    audio.currentTime = 0;
+    audio.play();
+    
 }
 
 buttons.forEach(
